@@ -364,7 +364,7 @@ const getDatas = async () => {
 const getIconUrl = (url: string) => {
   if (!url) return 'https://icons.duckduckgo.com/ip3/none.ico'
   const _url = new URL(url)
-  return `https://icons.duckduckgo.com/ip3/${_url.hostname}.ico`
+  return `https://api.xakj02.cn/api/getFavicon?url=${_url.hostname}`
 }
 
 // 获取Area ICON
